@@ -1,0 +1,12 @@
+version: '3.2'
+services:
+  ark-server:
+    image: ark:latest
+    container_name: ark-server
+    ports:
+    - "27015:27015/udp"
+    - "7777:7777/udp"
+    - "7778:7778/udp"
+    - "27020:27020/tcp"
+    volumes:
+    - MOUNT_DIRECTORY:/ark
