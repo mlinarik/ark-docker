@@ -11,11 +11,15 @@ Change the following:
 
 Step 2)
 
-Build the Docker Image DO NOT PUSH TO A PUBLIC REGISTRY AS IT IS, THAT WILL LEAK THE ADMIN PASSWORD
+Build the Docker Image DO NOT PUSH TO A PUBLIC REGISTRY AS IT IS, THAT WILL LEAK THE ADMIN PASSWORD.
+
+Ex. docker build . -t ark:latest
 
 Step 3)
 
 Create a volume mount
+
+Ex. /data/ark
 
 Step 4)
 
